@@ -89,7 +89,7 @@ def compute_weight_matrix(satellite_positions, receiver_position):
         elev_angle = compute_elevation_angle(sat_pos, receiver_position)
         # Weight based on sine of elevation angle (higher elevation = higher weight)
         if elev_angle > np.radians(5):  # Mask low elevation satellites
-            weights[i] = np.sin(elev_angle)**2
+            weights[i] = 1/(np.sin(elev_angle)**2)
         else:
             weights[i] = 0.01  # Very low weight for low elevation
     
