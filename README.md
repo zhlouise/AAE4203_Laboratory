@@ -24,7 +24,6 @@ The full laboratory report is provided in:
 | `pyubx2_csv_converter_gui.py` | GUI utility for converting UBX receiver data to CSV |
 | `rinex2csv.m` | MATLAB script for converting RINEX observation files to CSV for downstream processing |
 | `MatRTKLIB-main/` | MATLAB wrapper around MALIB/RTKLIB functionality (port + tools) Credit: https://github.com/taroz/MatRTKLIB|
-|
 
 ## 3. Dependencies
 - MATLAB
